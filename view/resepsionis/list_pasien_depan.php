@@ -1,10 +1,10 @@
 <?php
- ini_set('error_reporting', 0);
- ini_set('display_errors', 0);
-    session_start();
-    if (!isset($_SESSION['username'])){
-        header("Location: ../../index.php");
-    }
+//  ini_set('error_reporting', 0);
+//  ini_set('display_errors', 0);
+//     session_start();
+//     if (!isset($_SESSION['username'])){
+//         header("Location: ../../index.php");
+//     }
 ?>
 <!DOCTYPE html>
 <html>

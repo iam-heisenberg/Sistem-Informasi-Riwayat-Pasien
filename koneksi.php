@@ -1,21 +1,7 @@
 <?php
-	$host = 'us-cdbr-east-04.cleardb.com'; 
-	$db = 'e92d0a86';
-	$user = 'b06e4d78cc70c5'; 
-	$pass = 'e92d0a86';
-	$charset = 'utf8mb4';
-
-	// $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-
-	// try{
-	// 	$pdo = new PDO($dsn, $user, $pass); 
-	// 	$pdo -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
-	// } catch (PDOException $e){
-	// 	throw new PDOException($e->getMessage());
-	// }
-
-	$koneksi = mysqli_connect("$host,$user,$pass,$db"); 
-	if (mysqli_connect_errno()) {
-		echo "Koneksi database eror asdasdasdasdasd: ". mysqli_connect_error();
-	}
+$hostname='us-cdbr-east-04.cleardb.com';
+$username='b06e4d78cc70c5';
+$password='e92d0a86';
+$dbname='heroku_61847ab65c6aed4';
+$koneksi=mysqli_connect($hostname,$username, $password, $dbname);
 ?>

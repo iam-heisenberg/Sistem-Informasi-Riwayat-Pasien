@@ -1,5 +1,6 @@
 <?php 
     include 'koneksi.php'; 
+    
     if(isset($_POST['tambah_riwayat'])){    
         $id_pasien=$_POST['nama_pasien']; 
         $tanggalID=date('dHi');
