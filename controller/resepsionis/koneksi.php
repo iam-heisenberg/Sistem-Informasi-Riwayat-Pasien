@@ -1,6 +1,7 @@
 <?php
-	$koneksi = mysqli_connect("us-cdbr-east-04.cleardb.com, b06e4d78cc70c5, e92d0a86,heroku_61847ab65c6aed4"); 
-	if (mysqli_connect_errno()) {
-		echo "Koneksi database eror : ". mysqli_connect_error();
-	}
+$hostname='us-cdbr-east-04.cleardb.com';
+$username='b06e4d78cc70c5';
+$password='e92d0a86';
+$dbname='heroku_61847ab65c6aed4';
+$koneksi=mysqli_connect($hostname,$username, $password, $dbname);
 ?>
