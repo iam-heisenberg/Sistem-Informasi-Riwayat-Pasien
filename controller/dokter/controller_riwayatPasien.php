@@ -1,6 +1,6 @@
 <?php 
     include 'koneksi.php'; 
-    
+
     if(isset($_POST['tambah_riwayat'])){    
         $id_pasien=$_POST['nama_pasien']; 
         $tanggalID=date('dHi');
@@ -71,7 +71,6 @@
             $obat=$_POST['obat_dikasih']; 
             $convert_obat=implode(", ", $obat);
         }
-
         $hitungArray=count($_POST['dikasih']);
 
         for($i=0;$i<$hitungArray;$i++){
