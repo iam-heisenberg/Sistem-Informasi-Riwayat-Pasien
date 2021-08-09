@@ -14,7 +14,7 @@
 	// 	throw new PDOException($e->getMessage());
 	// }
 
-	$koneksi = mysqli_connect("$host,$user,$pass,$db"); 
+	$koneksi = mysqli_connect("remotemysql.com,crbjmgeTtQ,FeK6dpleJ2,crbjmgeTtQ"); 
 	if (mysqli_connect_errno()) {
 		echo "Koneksi database eror asdasdasdasdasd: ". mysqli_connect_error();
 	}
