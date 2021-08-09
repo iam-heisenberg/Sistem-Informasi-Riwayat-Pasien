@@ -46,7 +46,7 @@
 
 		
 		<div class="item_sidemenu">
-			<a class="item" href="Inventory_depan.php"  class="item_item_sidemenu" style="display: flex;">
+			<a class="item" href="inventory_depan.php"  class="item_item_sidemenu" style="display: flex;">
 				<i class="fas fa-prescription-bottle-alt " style="font-size: 26px;margin-left: 15px;margin-top: 5px"></i>
 				<p  style="font-family: futuraBold; font-size: 25px; margin-left: 15px">Inventory</p>
 			</a>

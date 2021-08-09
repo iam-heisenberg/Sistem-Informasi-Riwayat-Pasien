@@ -86,7 +86,7 @@
 
         <!-- ini formnya    -->
         <div class="dasarForm">
-            <form action="../../controller/dokter/controller_riwayatPasien.php" method="post" autocomplate="off">
+            <form action="../../controller/dokter/tambah_riwayatPasien_manual.php" method="post" autocomplate="off">
                 <div class="form-row">
                     <div class="col">
                         <div class="form-group">
@@ -129,7 +129,7 @@
                     <div class="col">
                         <div class="form-group">
                             <label for="tanggal_masuk">Tanggal Masuk</label>
-                            <input autocomplete="off" type="text" name="tanggal_masuk" id="tanggal_masuk"  required  class="form-control datepicker datetimepicker-input" data-toggle="datetimepicker" data-target=".datepicker" placeholder="Masukan tanggal masuk pegawai" autocomplate="off"/>
+                            <input autocomplete="off" type="text" name="tanggal_masuk" id="tanggal_masuk"  required  class="form-control datepicker datetimepicker-input" data-toggle="datetimepicker" data-target=".datepicker" placeholder="Masukan tanggal masuk pasien" autocomplate="off"/>
                         </div>
                     </div>
                 </div>
@@ -202,7 +202,7 @@
                 <div class="form-row">
                     <div class="col">
                         <div class="form-group">
-                            <label for="kategori_obat">Obat dikasih</label>
+                            <label for="obat_dikasih">Obat dikasih</label>
                             <select name="obat_dikasih[]" id="obat_dikasih" class="form-control" multiple="true" required>
                                 
                                 <?php

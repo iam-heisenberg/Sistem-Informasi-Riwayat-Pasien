@@ -1,63 +1,6 @@
 <?php 
-    include 'koneksi.php'; 
-
+    
     if(isset($_POST['tambah_riwayat'])){    
-        $id_pasien=$_POST['nama_pasien']; 
-        $tanggalID=date('dHi');
-        $tanggal=$_POST['tanggal_masuk']; 
-        $berat_badan=$_POST['berat_badan']; 
-        $umur=$_POST['umur_pasien']; 
-        $subjek=$_POST['subjek']; 
-        $objek=$_POST['objek']; 
-        $asesestment=$_POST['assestment']; 
-        $planing=$_POST['planing']; 
-        $dikasih=$_POST['dikasih'];
-        $idObat=$_POST['id_obat'];
-        
-        
-        if(empty($_POST['rujukan'])){
-            $rujukan="-";
-        } else{
-            $rujukan=$_POST['rujukan'];
-        }
-
-        if(empty($_POST['berat_badan'])){
-            $berat_badan="-";
-        } else{
-            $berat_badan=$_POST['rujukan'];
-        }
-
-        if(empty($_POST['umur_pasien'])){
-            $umur="-";
-        } else{
-            $umur=$_POST['umur_pasien'];
-        }
-
-        if(empty($_POST['subjek'])){
-            $subjek="-";
-        } else{
-            $subjek=$_POST['subjek'];
-        }
-
-        if(empty($_POST['objek'])){
-            $objek="-";
-        } else{
-            $objek=$_POST['objek'];
-        }
-
-        if(empty($_POST['assestment'])){
-            $asesestment="-";
-        } else{
-            $asesestment=$_POST['assestment'];
-        }
-
-        if(empty($_POST['planing'])){
-            $planing="-";
-        } else{
-            $planing=$_POST['planing'];
-        }
-
-
         if(isset($_POST['id_obatDikasih_C'])){
             $id_obatDikasih=$_POST['id_obatDikasih_C'];
 
