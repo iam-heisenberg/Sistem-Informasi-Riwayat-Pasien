@@ -10,7 +10,7 @@
         $planing=$_POST['planing'];   
         $obatDikasih=$_POST['obatDikasih'];
         $rujukan=$_POST['rujukan'];
-        $convert_obat=$_POST['convertObat'] 
+        $convert_obat=$_POST['convertObat'];
         
         
         $hitungArray=count($_POST['id_obat']);
