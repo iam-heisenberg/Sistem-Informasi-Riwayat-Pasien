@@ -282,10 +282,6 @@
                         <td class="deskripsi">: <?php echo $riwayat_pasienTampil['berat_badan'];?> Kg</td>
                     </tr>
 
-                    <tr>
-                        <td class="objek">Tanggal Kunjungan Pasien</td>
-                        <td class="deskripsi">: <?php echo $riwayat_pasienTampil['tanggal_kunjungan'];?></td>
-                    </tr>
 
                     <tr>
                         <td class="objek">Umur</td>
