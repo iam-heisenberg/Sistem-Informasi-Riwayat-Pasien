@@ -20,7 +20,6 @@
     <script defer src="../../js/all.js"></script>
     <link rel="stylesheet" href="../../css/all.css"/>
     <link href="../../css/select2.css" rel="stylesheet"/>
-    <?php include 'head_tag.php'; ?>
     <link rel="stylesheet" type="text/css" href="styling_checkout_dokter.css?<?=filemtime('styling_checkout_dokter.css');?>">
     <script src="../../js/jautocalc.js"></script>
 	<script type="text/javascript">
@@ -81,6 +80,8 @@
                         $asesestment=$_POST['assestment']; 
                         $planing=$_POST['planing'];
                         $hitung = count($obatDikasih); 
+                
+
                         if(empty($_POST['rujukan'])){
                             $rujukan="-";
                         } else{
@@ -121,6 +122,7 @@
 
                                 <tr>
                                     <td>
+
                                         <input type="hidden" name="nama_pasien" id="nama_pasien" value="<?php echo $id;?>">
                                         <input type="hidden" name="tanggal_masuk" id="tanggal_masuk" value="<?php echo $tanggalMasuk;?>">
                                         <input type="hidden" name="berat_badan" id="berat_badan" value="<?php echo $id;?>">
@@ -129,10 +131,10 @@
                                         <input type="hidden" name="objek" id="objek" value="<?php echo $objek;?>">
                                         <input type="hidden" name="assestment" id="assestment" value="<?php echo $asesestment;?>">
                                         <input type="hidden" name="planing" id="planing" value="<?php echo $planing;?>">
-                                        <input type="hidden" name="id_obatDikasih_C" id="id_obatDikasih_C" value="<?php echo $id_obatDikasih;?>">
+                                        <input type="hidden" name="id_obatDikasih" id="id_obatDikasih" value="<?php echo $id_obatDikasih;?>">
                                         <input type="hidden" name="rujukan" id="rujukan" value="<?php echo $rujukan;?>">
-                                        <input type="hidden" name="convertObatC" id="convertObatC" value="<?php echo $convert_obat;?>">
-                                        <input type="hidden" name="pisahIF" id="pisahIF" value="1">
+                                        <input type="hidden" name="convertObat" id="convertObat" value="<?php echo $convert_obat;?>">
+                                    
                                     </td>
                                 </tr>
                                
