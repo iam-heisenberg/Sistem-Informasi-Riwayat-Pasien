@@ -1,4 +1,5 @@
 <?php 
+    include 'koneksi.php'; 
     if(isset($_POST['tambah_riwayat'])){
         $id_pasien=$_POST['nama_pasien'];
         $tanggalMasuk=$_POST['tanggal_masuk'];
@@ -15,6 +16,7 @@
         
         $hitungArray=count($_POST['id_obat']);
         for($i=0;$i<$hitungArray;$i++){
+            $dikasih=$_POST['dikasih'];
             $stock=mysqli_query($koneksi,"SELECT *, stock_obat-$dikasih[$i] AS total From obat WHERE nama_obat='$idObat[$i]'");
             $hasilStock=mysqli_fetch_array($stock);
             $convertStock=$hasilStock['total'];
