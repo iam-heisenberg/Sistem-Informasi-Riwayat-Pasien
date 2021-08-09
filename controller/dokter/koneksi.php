@@ -7,4 +7,5 @@
 	$koneksi=mysqli_connect($hostname,$username, $password, $dbname);
 
     
+    asdasdasdasdasds
 ?>
