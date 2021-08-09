@@ -12,6 +12,7 @@
         $obatDikasih=$_POST['obatDikasih'];
         $rujukan=$_POST['rujukan'];
         $convert_obat=$_POST['convertObat'];
+        $id_obatDikasih=$_POST['id_obatDikasih']; 
         
         
         $hitungArray=count($_POST['id_obat']);
@@ -24,7 +25,7 @@
         }
 
         mysqli_query($koneksi,"insert into obat_untuk_pasien values('$id_obatDikasih','$convert_obat')");
-        mysqli_query($koneksi, "insert into riwayat_pasien values('', '$id_pasien', '$tanggal', '$berat_badan', '$umur', '$subjek', '$objek', '$asesestment','$planing', '$id_obatDikasih', 1,'$rujukan')");
+        mysqli_query($koneksi, "insert into riwayat_pasien values('', '$id_pasien', '$tanggalMasuk', '$berat_badan', '$umur', '$subjek', '$objek', '$asesestment','$planing', '$id_obatDikasih', 1,'$rujukan')");
         mysqli_query($koneksi,"update pasien set antri_mode=0 where id_pasien='$id_pasien'"); 
         mysqli_query($koneksi,"update antrian set modes=0 where id_pasien='$id_pasien'");
         header("location:../../view/dokter/antrian_pasien_dokter.php"); 
