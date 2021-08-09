@@ -1,0 +1,86 @@
+@font-face{
+	font-family: futuraBold; 
+	src: url('resource/Futura_Bold.ttf');
+}
+
+@font-face{
+	font-family: modecoRegular ;
+	src: url('resource/Modeco_Regular.otf');
+}
+
+@font-face{
+	font-family: modecoBold ; 
+	src: url('resource/Modeco_Bold.otf');
+}
+
+@font-face{
+	font-family: modecoExtraLight ; 
+	src: url('resource/Modeco_Extra_Light.otf');
+}
+
+@font-face{
+	font-family: robotoRegular; 
+	src : url('resource/Roboto_Regular.ttf');
+}
+
+@font-face{
+	font-family: robotoLight; 
+	src : url('resource/Roboto_Light.ttf');
+}
+
+@font-face{
+	font-family: modecoLightItalic;
+	src: url('resource/ModecoRegularItalic.otf');
+}
+
+@font-face{
+	font-family: futuraBoldItalic; 
+	src: url('resource/Futura_Bold_Italic.ttf');
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(resource/background_switch.jpg);
+    object-fit:contain; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.isi{
+	height: 22vh;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	text-decoration: none;
+}
+
+.icon{
+	background-color: #BF785E;
+	width: 24vh;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+.icon:hover{
+	box-shadow:  0px 0px 20px rgba(192,128,92,0.4);
+	background-color: #a0674a;
+	text-decoration: none;
+}
+
+.icon_text{
+	color: white;
+	font-size: 80px;
+	margin-top: 20px;
+}
+
+.deskripsi {
+	color: white;
+	font-family: modecoRegular;
+	text-decoration: none;
+	margin-top: 5px;
+	padding-bottom: 2vh;
+}
+

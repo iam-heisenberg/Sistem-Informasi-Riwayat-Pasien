@@ -1,0 +1,61 @@
+@font-face{
+	font-family: futuraBold; 
+	src: url('resource/Futura_Bold.ttf');
+}
+
+@font-face{
+	font-family: modecoRegular ;
+	src: url('resource/Modeco_Regular.otf');
+}
+
+@font-face{
+	font-family: modecoBold ; 
+	src: url('resource/Modeco_Bold.otf');
+}
+
+@font-face{
+	font-family: modecoExtraLight ; 
+	src: url('resource/Modeco_Extra_Light.otf');
+}
+
+@font-face{
+	font-family: robotoRegular; 
+	src : url('resource/Roboto_Regular.ttf');
+}
+
+@font-face{
+	font-family: robotoLight; 
+	src : url('resource/Roboto_Light.ttf');
+}
+
+@font-face{
+	font-family: modecoLightItalic;
+	src: url('resource/ModecoRegularItalic.otf');
+}
+
+@font-face{
+	font-family: futuraBoldItalic; 
+	src: url('resource/Futura_Bold_Italic.ttf');
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(resource/background_switch.jpg);
+    object-fit:contain; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.test{
+    width: 50vw;
+    
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border-radius: 7px;
+    box-shadow: 0 0 15px rgba(0,0, 0, 0.4);
+}
+

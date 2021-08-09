@@ -1,0 +1,84 @@
+@font-face{
+	font-family: futuraBold; 
+	src: url('../../resource/Futura_Bold.ttf');
+}
+
+@font-face{
+	font-family: modecoRegular ;
+	src: url('../../resource/Modeco_Regular.otf');
+}
+
+@font-face{
+	font-family: modecoBold ; 
+	src: url('../../resource/Modeco_Bold.otf');
+}
+
+@font-face{
+	font-family: modecoExtraLight ; 
+	src: url('../../resource/Modeco_Extra_Light.otf');
+}
+
+@font-face{
+	font-family: robotoRegular; 
+	src : url('../../resource/Roboto_Regular.ttf');
+}
+
+@font-face{
+	font-family: robotoLight; 
+	src : url('../../resource/Roboto_Light.ttf');
+}
+
+@font-face{
+	font-family: modecoLightItalic;
+	src: url('../../resource/ModecoRegularItalic.otf');
+}
+
+@font-face{
+	font-family: futuraBoldItalic; 
+	src: url('../../resource/Futura_Bold_Italic.ttf');
+}
+
+@media screen and (min-width: 1580px) {
+    div.item_sidemenu1{
+        margin-top:20vh;
+    }
+}
+
+.logoDokter{
+    width: 7vw;
+    margin-top: 3vh;
+    
+}
+
+.sideNav{
+    width: 21vw;
+    height: 100vh;
+    box-shadow: 6px 9px 20px rgba(0,0,0,0.5);
+	background-color: white;
+}
+
+.item_sidemenu{
+	width: 100%; 
+	margin-bottom: 10px;
+    margin-left: 1vw;
+}
+
+.item_sidemenu1{
+	width: 100%; 
+	margin-bottom: 10px;
+    margin-left: 1vw;
+    margin-top:17vh;
+}
+
+.item{
+	color: #444C5E;
+	height: 40px;
+	width: 19vw;
+}
+
+.item:hover{
+	color:  white;
+	background-color:  #444C5E;
+	border-radius: 1000px;
+	text-decoration: none;
+}

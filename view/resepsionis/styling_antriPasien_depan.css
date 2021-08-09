@@ -1,0 +1,196 @@
+@font-face{
+	font-family: futuraBold; 
+	src: url('../../resource/Futura_Bold.ttf');
+}
+
+@font-face{
+	font-family: modecoRegular ;
+	src: url('../../resource/Modeco_Regular.otf');
+}
+
+@font-face{
+	font-family: modecoBold ; 
+	src: url('../../resource/Modeco_Bold.otf');
+}
+
+@font-face{
+	font-family: modecoExtraLight ; 
+	src: url('../../resource/Modeco_Extra_Light.otf');
+}
+
+@font-face{
+	font-family: robotoRegular; 
+	src : url('../../resource/Roboto_Regular.ttf');
+}
+
+@font-face{
+	font-family: robotoLight; 
+	src : url('../../resource/Roboto_Light.ttf');
+}
+
+@font-face{
+	font-family: modecoLightItalic;
+	src: url('../../resource/ModecoRegularItalic.otf');
+}
+
+@font-face{
+	font-family: futuraBoldItalic; 
+	src: url('../../resource/Futura_Bold_Italic.ttf');
+}
+
+@media screen and (min-width: 1580px) {
+	div.enkapsulasi{
+		width: 58vw;
+	}
+}
+
+
+body{
+	height: 100%;
+	width: 100%; 
+	object-fit: contain;
+	background-image: url("../../resource/background_antri_depan.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.sidemenu {
+	position: fixed; 
+	height: 100%; 
+	width: 15%; 
+	background: white;
+	box-shadow: 6px 9px 20px rgba(0,0,0,0.5);
+	
+}
+
+.logo_dokter{
+	height: 30%; 
+	width: 40%; 
+	object-fit: contain;
+	margin-left: 25%;
+	margin-top: 10%;
+
+}
+
+.item_sidemenu{
+	width: 100%; 
+	height: 60px; 
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.item{
+	color: #444C5E;
+	margin-left: 7%;
+	height: 40px;
+	width: 170px;
+}
+
+.item:hover{
+	color:  white;
+	background-color:  #444C5E;
+	border-radius: 1000px;
+	text-decoration: none;
+}
+
+.isi{
+	width: 80vw;
+	left: 20vw;
+	position: absolute;
+}
+
+.daftar{
+	margin-top: 10vh;
+	font-family: modecoBold;
+	font-size: 5vw;
+	color:  #F29494;
+}
+
+.antrian{
+	margin-top: 10vh;
+	font-family: modecoBold;
+	font-size: 5vw;
+	margin-top: -7.5vh;
+	color:  #F29494;
+}
+
+.tabel_antri{
+	background-color: white;
+	margin: auto;
+}
+
+.enkapsulasi{
+	background-color: white;
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+	width: 62vw;
+	border-radius: 10px;
+	padding: 10px;
+	margin-top: 3vh;
+}
+
+.btn_warna{
+	background-color:#F29494 ;
+	color: white;
+	border-color: #F29494;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+	font-family: modecoBold
+}
+
+.btn_warna:hover{
+	background-color: #9f3b3b;
+}
+
+.headerTabel{
+	background-color: #F29494;
+	color: white;
+	font-family: modecoBold;
+}
+
+
+
+.dasar{
+	background-color: #F29494;	
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+	margin: auto;
+	height: 60px;
+}
+
+.tulisanJudul{
+	font-family: modecoBold;
+	color: white;
+	font-size: 20pt;
+	padding-top: 10px;
+	margin-left: 20px;
+}
+
+.konten{
+	height: 90px;
+	margin-top: 20px;
+	display: flex;
+}
+
+.antrian_pasien{
+	width:765PX;
+}
+
+.texs{
+	font-family: robotoRegular;
+	font-size: 15px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+}
+
+.tombolSubmit{
+	height: 40px;
+	width: 60px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+
+.noResult{
+	width: 100%;
+	font-family: modecoRegular;
+}
+
+
+

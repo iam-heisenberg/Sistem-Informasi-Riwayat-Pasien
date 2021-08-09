@@ -1,0 +1,188 @@
+@font-face{
+	font-family: futuraBold; 
+	src: url('../../resource/Futura_Bold.ttf');
+}
+
+@font-face{
+	font-family: modecoRegular ;
+	src: url('../../resource/Modeco_Regular.otf');
+}
+
+@font-face{
+	font-family: modecoBold ; 
+	src: url('../../resource/Modeco_Bold.otf');
+}
+
+@font-face{
+	font-family: modecoExtraLight ; 
+	src: url('../../resource/Modeco_Extra_Light.otf');
+}
+
+@font-face{
+	font-family: robotoRegular; 
+	src : url('../../resource/Roboto_Regular.ttf');
+}
+
+@font-face{
+	font-family: robotoLight; 
+	src : url('../../resource/Roboto_Light.ttf');
+}
+
+@font-face{
+	font-family: modecoLightItalic;
+	src: url('../../resource/ModecoRegularItalic.otf');
+}
+
+@font-face{
+	font-family: futuraBoldItalic; 
+	src: url('../../resource/Futura_Bold_Italic.ttf');
+}
+
+body{
+    background-color: #484848;
+}
+
+
+.bungkus{
+    background-color: white;
+    width: 50vw;
+    border-radius: 7px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    margin: auto;
+    position: relative;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin-top: 1%;
+    margin-bottom: 1%;
+   
+}
+
+.kotak_aesthethic{
+    width: 100%; 
+    height: 80px;
+    background-color: #3D8C95;
+    border-radius: 7px 7px 0 0  ;
+}
+
+.header{
+    width: 90%;
+    height: 40px;
+    position: relative;
+    top: -20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: inline-flex;
+}
+
+.tulisan_judul{
+    color: #3D8C95;
+    position: absolute;
+    top: 10%; left: 5%; right: 0; bottom: 0;
+    font-size: 1.5vw;
+    font-family: futuraBold;
+}
+
+.kembali{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    color: #3D8C95;
+    height: 5vh;
+   
+}
+
+.kiri_isinya{
+    position: absolute;
+    top: 0.5vh; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    font-size: 25px;
+}
+
+.header_tampang{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin-left: 20px;
+    border-radius: 4px;
+    height: 5vh;
+}
+
+
+.button{
+    font-size: 1vw;
+}
+
+.koso{
+    height: 10px;
+    width: 100%;
+}
+
+.dasar_tabel{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);    
+    background-color: white;
+}
+
+.bg_button{
+    width: 25%;
+    height: 99%;
+    padding: 0;
+}
+
+btn_tambah{
+    margin-left: 30%;
+}
+
+.header_judulModal{
+    width: 90%;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-top: -20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+}
+
+.tulisan_judulModal{
+    padding: 0;
+    font-family: futuraBold;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+    color: #3D8C95;
+    font-size: 18px ;
+}
+
+.formz{
+    width:86%; 
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    padding: none;
+}
+
+.inputz{
+    background-color: white;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+    ;
+}
+
+.input_style{
+    width: 99%;
+    border: none;
+    margin-left: 0;
+    height: 100%;
+    margin-left: 1%;
+}
+
+.simpan{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+}

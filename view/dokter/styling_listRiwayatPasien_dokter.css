@@ -1,0 +1,213 @@
+@font-face{
+	font-family: futuraBold; 
+	src: url('../../resource/Futura_Bold.ttf');
+}
+
+@font-face{
+	font-family: modecoRegular ;
+	src: url('../../resource/Modeco_Regular.otf');
+}
+
+@font-face{
+	font-family: modecoBold ; 
+	src: url('../../resource/Modeco_Bold.otf');
+}
+
+@font-face{
+	font-family: modecoExtraLight ; 
+	src: url('../../resource/Modeco_Extra_Light.otf');
+}
+
+@font-face{
+	font-family: robotoRegular; 
+	src : url('../../resource/Roboto_Regular.ttf');
+}
+
+@font-face{
+	font-family: robotoLight; 
+	src : url('../../resource/Roboto_Light.ttf');
+}
+
+@font-face{
+	font-family: modecoLightItalic;
+	src: url('../../resource/ModecoRegularItalic.otf');
+}
+
+@font-face{
+	font-family: futuraBoldItalic; 
+	src: url('../../resource/Futura_Bold_Italic.ttf');
+}
+
+@media screen and (max-width: 1580px){
+    div.tombol_cari{
+        width: 6.6vw;
+    }
+}
+
+.logoDokter{
+    width: 7vw;
+    margin-top: 3vh;
+    
+}
+
+.sideNav{
+    width: 21vw;
+    height: 100vh;
+    box-shadow: 6px 9px 20px rgba(0,0,0,0.5);
+	background-color: white;
+}
+
+.item_sidemenu{
+	width: 100%; 
+	margin-bottom: 10px;
+    margin-left: 1vw;
+}
+
+.item_sidemenu1{
+	width: 100%; 
+	margin-bottom: 10px;
+    margin-left: 1vw;
+    margin-top:17vh;
+}
+
+.item{
+	color: #444C5E;
+	height: 40px;
+	width: 19vw;
+}
+
+.item:hover{
+	color:  white;
+	background-color:  #444C5E;
+	border-radius: 1000px;
+	text-decoration: none;
+}
+
+body{
+	height: 100%;
+	width: 100%; 
+    display: flex;
+	background-color: white;
+}
+
+.sideNavBar{
+    position: fixed;
+    width: 15vw;
+    height: 50vh;
+}
+.boxKosong{
+    width: 100%;
+    height: 10vh;
+    background-color: #9ebac6;
+}
+
+.isiKonten{
+    width: 80vw;
+    height: 100px;
+    margin-left: 21vw;
+}
+
+.headerKumpulan{
+    display: flex;
+    width: 92%;
+    height: 7.75vh;
+    margin-left: 4%;
+    margin-top: -4vh;
+}
+
+.tombolKembali{
+    background-color: white;
+    width: 10%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo_kembali{
+    color: #9ebac6;
+    font-size: 4vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo_kembali:hover{
+    color: #658a9a;
+}
+
+.judulHeader{
+    font-family: futuraBold;
+    color: #9ebac6;
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    margin-left: 1.5vw;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    font-size: 4vh;
+    padding-top: 1vh;
+    padding-left: 2vw;
+}
+
+.dasarCari{
+    width: 92%;
+    height: 8vh;
+    display: flex;
+    margin-left: 4%;
+    margin-top: 3vh;
+}
+
+
+.cari{
+    height: 100%;
+    width: 65vw;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 2vw;
+    font-family: modecoRegular;
+}
+
+.styleForm{
+    display: flex;
+}
+
+.tombol_cari{
+    margin-left: 1vw;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background-color: #9ebac6;
+    height: 100%;
+    width: 6.5vw;
+    border-radius: 5px;
+    color: white;
+
+}
+
+.searchIni{
+    border: none;
+    background-color:#9ebac6;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 1.5vw;
+    border-radius: 5px;
+}
+
+.dasarTabel{
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 92%;
+    margin-left: 4%;
+    margin-top: 3vh;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.myThead{
+    background-color:#9ebac6;
+    color: white;
+}

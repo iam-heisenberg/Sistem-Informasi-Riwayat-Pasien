@@ -1,0 +1,157 @@
+@font-face{
+	font-family: futuraBold; 
+	src: url('../../resource/Futura_Bold.ttf');
+}
+
+@font-face{
+	font-family: modecoRegular ;
+	src: url('../../resource/Modeco_Regular.otf');
+}
+
+@font-face{
+	font-family: modecoBold ; 
+	src: url('../../resource/Modeco_Bold.otf');
+}
+
+@font-face{
+	font-family: modecoExtraLight ; 
+	src: url('../../resource/Modeco_Extra_Light.otf');
+}
+
+@font-face{
+	font-family: robotoRegular; 
+	src : url('../../resource/Roboto_Regular.ttf');
+}
+
+@font-face{
+	font-family: robotoLight; 
+	src : url('../../resource/Roboto_Light.ttf');
+}
+
+@font-face{
+	font-family: modecoLightItalic;
+	src: url('../../resource/ModecoRegularItalic.otf');
+}
+
+@font-face{
+	font-family: futuraBoldItalic; 
+	src: url('../../resource/Futura_Bold_Italic.ttf');
+}
+
+
+body{
+	height: 100%;
+	width: 100%; 
+	object-fit: contain;
+	background-image: url('../../resource/background_inventory_depan.jpg');
+	/*background-color: white;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.sidemenu {
+	position: absolute; 
+	height: 100%; 
+	width: 15%; 
+	background: white;
+	box-shadow: 6px 9px 20px rgba(0,0,0,0.5);
+	
+}
+
+.logo_dokter{
+	height: 30%; 
+	width: 40%; 
+	object-fit: contain;
+	margin-left: 25%;
+	margin-top: 10%;
+
+}
+
+.item_sidemenu{
+	width: 100%; 
+	height: 60px; 
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.item{
+	color: #444C5E;
+	margin-left: 7%;
+	height: 40px;
+	width: 170px;
+}
+
+.item:hover{
+	color:  white;
+	background-color:  #444C5E	;
+	border-radius: 1000px;
+	text-decoration: none;
+}
+
+.isi_konten{
+	position: absolute;
+	left: 20%;
+	width: 80%; 
+}
+
+.tulisan_judul{
+	font-family: modecoBold; 
+	font-size: 8vh;
+	color: #3D8C95;
+	margin-top: 5vh;
+}
+
+
+.form_cari{
+	margin-top: 5%;
+	width: 50%;
+	
+}
+
+.input_box{
+	width: 75%; 
+	border-radius:5px; 
+	height: 40px; 
+	padding-left: 20px; 
+	font-family: robotoRegular;
+	border-style: none;
+	box-shadow: 3px 6px 15px rgba(0,0,0,0.6);
+}
+
+.button_box{
+	border-radius: 10px; 
+	width: 40px;
+	height: 40px; 
+	margin-left: 10px; 
+	background-color: white;
+	border-style: none;
+	box-shadow: 3px 6px 15px rgba(0,0,0,0.6);
+	font-size: 17px
+}
+
+.item_opsi{
+	width: 100%; 
+	margin-top: 50px;
+	display: flex;
+}
+
+.text_card{
+	font-family: futuraBold; 
+	font-size: 20px;
+}
+
+.tombol{
+	width: 15vw;
+	box-shadow: 5px 6px 18px rgba(0,0,0,0.5);
+	color: black;
+}
+
+.tombol:hover{
+	text-decoration: none;
+	box-shadow: 0px 0px 20px 15px rgba(60,143,151,0.6);
+	/* transition: 0.3s ease; */
+}
+
+

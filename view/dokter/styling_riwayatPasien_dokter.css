@@ -1,0 +1,181 @@
+@font-face{
+	font-family: futuraBold; 
+	src: url('../../resource/Futura_Bold.ttf');
+}
+
+@font-face{
+	font-family: modecoRegular ;
+	src: url('../../resource/Modeco_Regular.otf');
+}
+
+@font-face{
+	font-family: modecoBold ; 
+	src: url('../../resource/Modeco_Bold.otf');
+}
+
+@font-face{
+	font-family: modecoExtraLight ; 
+	src: url('../../resource/Modeco_Extra_Light.otf');
+}
+
+@font-face{
+	font-family: robotoRegular; 
+	src : url('../../resource/Roboto_Regular.ttf');
+}
+
+@font-face{
+	font-family: robotoLight; 
+	src : url('../../resource/Roboto_Light.ttf');
+}
+
+@font-face{
+	font-family: modecoLightItalic;
+	src: url('../../resource/ModecoRegularItalic.otf');
+}
+
+@font-face{
+	font-family: futuraBoldItalic; 
+	src: url('../../resource/Futura_Bold_Italic.ttf');
+}
+
+.logoDokter{
+    width: 7vw;
+    margin-top: 3vh;
+    
+}
+
+.sideNav{
+    width: 21vw;
+    height: 100vh;
+    box-shadow: 6px 9px 20px rgba(0,0,0,0.5);
+	background-color: white;
+}
+
+.item_sidemenu{
+	width: 100%; 
+	margin-bottom: 10px;
+    margin-left: 1vw;
+}
+
+.item_sidemenu1{
+	width: 100%; 
+	margin-bottom: 10px;
+    margin-left: 1vw;
+    margin-top:17vh;
+}
+
+.item{
+	color: #444C5E;
+	height: 40px;
+	width: 19vw;
+}
+
+.item:hover{
+	color:  white;
+	background-color:  #444C5E;
+	border-radius: 1000px;
+	text-decoration: none;
+}
+
+body{
+	height: 100%;
+	width: 100%; 
+	background-image: url(../../resource/background_riwayatPasien_dokter.jpg);
+    object-fit: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+	height: 100%;
+}
+
+.sideNavBar{
+    position: fixed;
+    width: 15vw;
+    height: 50vh;
+}
+
+.isiKonten{
+    width: 76vw;
+    height: 100%;
+    margin-left: 25vw;
+}
+
+.header1{
+	margin-top: 10vh;
+	font-family: modecoBold;
+	font-size: 5vw;
+	color:  #9ebac6;
+}
+
+.header2{
+	margin-top: 10vh;
+	font-family: modecoBold;
+	font-size: 5vw;
+	margin-top: -7.5vh;
+	color:  #9ebac6;
+}
+
+.bungkus_text{
+    display: flex;
+}
+
+.bungkus_cari{
+    background-color: white;
+    height: 5vh;
+    width: 30vw;
+    border-radius: 1000px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
+}
+
+.cari_riwayat{
+    width: 100%;
+    height: 100%;
+    padding:1vh 0 0 1vw;
+    border-radius: 100px;
+    border: none;
+    font-family: modecoRegular;
+    font-size: 2.5vh;
+}
+
+.submit{
+    background-color: #9ebac6;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 1000px;
+    margin-left: 1.5vw;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
+}
+
+.tombol_submit{
+    color: white;
+    border:none;
+    background-color:#9ebac6;
+    border-radius: 1000px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2.5vh;
+}
+
+.card_pilihan{
+    width: fit-content;
+    display: flex;
+}
+
+.kartu_pilihan{
+    width: 15vw;
+    margin-top: 5vh;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
+}
+
+
+.enkapsulasiA{
+    text-decoration: none;
+    color: black;
+}
+
+.enkapsulasiA:hover{
+    text-decoration: none;
+}
+

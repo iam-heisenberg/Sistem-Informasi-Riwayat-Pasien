@@ -1,0 +1,199 @@
+@font-face{
+	font-family: futuraBold; 
+	src: url('../../resource/Futura_Bold.ttf');
+}
+
+@font-face{
+	font-family: modecoRegular ;
+	src: url('../../resource/Modeco_Regular.otf');
+}
+
+@font-face{
+	font-family: modecoBold ; 
+	src: url('../../resource/Modeco_Bold.otf');
+}
+
+@font-face{
+	font-family: modecoExtraLight ; 
+	src: url('../../resource/Modeco_Extra_Light.otf');
+}
+
+@font-face{
+	font-family: robotoRegular; 
+	src : url('../../resource/Roboto_Regular.ttf');
+}
+
+@font-face{
+	font-family: robotoLight; 
+	src : url('../../resource/Roboto_Light.ttf');
+}
+
+@font-face{
+	font-family: modecoLightItalic;
+	src: url('../../resource/ModecoRegularItalic.otf');
+}
+
+@font-face{
+	font-family: futuraBoldItalic; 
+	src: url('../../resource/Futura_Bold_Italic.ttf');
+}
+
+.logoDokter{
+    width: 7vw;
+    margin-top: 3vh;
+    
+}
+
+.sideNav{
+    width: 21vw;
+    height: 100vh;
+    box-shadow: 6px 9px 20px rgba(0,0,0,0.5);
+	background-color: white;
+}
+
+.item_sidemenu{
+	width: 100%; 
+	margin-bottom: 10px;
+    margin-left: 1vw;
+}
+
+.item_sidemenu1{
+	width: 100%; 
+	margin-bottom: 10px;
+    margin-left: 1vw;
+    margin-top:17vh;
+}
+
+.item{
+	color: #444C5E;
+	height: 40px;
+	width: 19vw;
+}
+
+.item:hover{
+	color:  white;
+	background-color:  #444C5E;
+	border-radius: 1000px;
+	text-decoration: none;
+}
+
+.sideNavBar{
+    position: fixed;
+    width: 15vw;
+    height: 50vh;
+}
+
+.isiKonten{
+    width: 80vw;
+    height: 100%;
+    margin-left: 20vw;
+}
+
+.headerAesthethic{
+    background-color: #3D8C95;
+    width: 100%;
+    height: 10vh;
+}
+
+.judulHeader{
+    background-color: white;
+    width: 90%;
+    margin-left: 5%;
+    height: 9vh;
+    margin-top:-5vh;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0,0, 0.5);
+}
+
+.judulTulisan{
+    font-family: modecoBold;
+    color:#3D8C95; 
+    padding-top: 1.2%;
+    font-size: 4vh;
+    padding-left:2vw;
+}
+
+.tabelObat{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 4vh;
+    padding: 1vw;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0,0, 0.5);
+
+}
+
+.bungkus_cari{
+	width: 90.6%;
+	height: 8vh;
+	margin-left: 4.5%;
+	margin-top: 4vh;
+	 display: flex;
+}
+
+.dasar_cari{
+	width: 87%;
+	height: 100%;
+	margin-left: 0.5%;
+	background-color: white;
+	box-shadow: 1px 3px 15px rgba(0,0,0,0.5);
+}
+
+.cari{
+	width: 100%;
+	height: 100%;
+	padding: 5px 5px 5px 15px;
+	border: none;
+}
+
+.dasar_logoSearch{
+	width: 9%;
+	height: 100%;
+	margin-left: 3%;
+	background-color: white;
+	box-shadow: 1px 3px 15px rgba(0,0,0,0.5);
+}
+
+.logo_cari{
+	width: 100%;
+	height: 100%;
+	border: none;
+	text-decoration: none;
+	background-color: white;
+	font-size: 25px;
+	color: #2d5e63;
+}
+
+.logo_cari:hover{
+	background-color: rgba(235, 235, 235, 0.722);
+}
+
+.reset{
+	margin-bottom: 10px;
+}
+
+.headerModal{
+	background-color:#2d5e63;
+	width: 100%;
+	height: 3vw;
+	box-shadow: 1px 3px 15px rgba(0,0,0,0.5);
+	border-radius:  5px;
+	color: white;
+	font-family: modecoBold;
+	font-size: 1vw;
+	padding: 0.9vw;
+}
+
+.formUpdate{
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+	margin-top: 2vh;
+	border-radius: 5px;
+	padding: 1vh;
+}
+
+.kosong{
+	width: 100%;
+	height: 3vh;
+}
+

@@ -1,0 +1,236 @@
+@font-face{
+	font-family: futuraBold; 
+	src: url('../../resource/Futura_Bold.ttf');
+}
+
+@font-face{
+	font-family: modecoRegular ;
+	src: url('../../resource/Modeco_Regular.otf');
+}
+
+@font-face{
+	font-family: modecoBold ; 
+	src: url('../../resource/Modeco_Bold.otf');
+}
+
+@font-face{
+	font-family: modecoExtraLight ; 
+	src: url('../../resource/Modeco_Extra_Light.otf');
+}
+
+@font-face{
+	font-family: robotoRegular; 
+	src : url('../../resource/Roboto_Regular.ttf');
+}
+
+@font-face{
+	font-family: robotoLight; 
+	src : url('../../resource/Roboto_Light.ttf');
+}
+
+@font-face{
+	font-family: modecoLightItalic;
+	src: url('../../resource/ModecoRegularItalic.otf');
+}
+
+@font-face{
+	font-family: futuraBoldItalic; 
+	src: url('../../resource/Futura_Bold_Italic.ttf');
+}
+
+
+body{
+	height: 100%;
+	width: 100%; 
+	object-fit: contain;
+	background-color: #F6F6F6;
+	/*background-color: white;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.sidemenu {
+	position: absolute; 
+	height: 100%; 
+	width: 15%; 
+	background: white;
+	box-shadow: 6px 9px 20px rgba(0,0,0,0.5);
+	
+}
+
+.logo_dokter{
+	height: 30%; 
+	width: 40%; 
+	object-fit: contain;
+	margin-left: 25%;
+	margin-top: 10%;
+
+}
+
+.item_sidemenu{
+	width: 100%; 
+	height: 60px; 
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.item{
+	color: #444C5E;
+	margin-left: 7%;
+	height: 40px;
+	width: 170px;
+}
+
+.item:hover{
+	color:  white;
+	background-color:   #444C5E	;
+	border-radius: 1000px;
+	text-decoration: none;
+}
+
+
+.isi_Form{
+	width: 85%; 
+	height: 100px;
+	position: absolute;
+	left: 15%;
+}
+
+.style_back{ 
+	background-color: white;
+	border-style: none;
+	box-shadow: 1px 3px 15px rgba(0,0,0,0.6);
+	border-radius: 10%;
+	font-size: 60px;
+	width: 70px; 
+	height: 60px;
+	padding: 10px;
+	color:   #3D8C95;
+	margin-top: 5%;
+
+}
+
+.style_back:hover{
+	color: #3D8C95;
+}
+
+.tulisan_judul{
+	font-family: modecoBold; 
+	font-size: 35px;
+	color:  #3D8C95;
+	margin-top: 4%;
+}
+
+.aestheticc_kotak{
+	width: 100%; 
+	height: 10vh;
+	background-color: #3D8C95;
+}
+
+
+.form_gaya{
+	background-color: white; 
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 1px 3px 15px rgba(0,0,0,0.4);
+	margin-top: 7vh;
+}
+
+.bungkus{
+	width: 96%;
+	margin-left: 2%;
+}
+
+.judul{
+	width: 100%; 
+	background-color: white; 
+	height: 100%;
+	margin-left: 20px;
+	box-shadow: 1px 3px 15px rgba(0,0,0,0.4);
+}
+
+.header{
+	width: 96%; 
+	height: 7.75vh; 
+	position: absolute;
+	top: 5vh;
+	display: flex;
+}
+
+.back_button{
+	background-color: white; 
+	font-size: 5vh;
+	border-style: none;
+	box-shadow: 1px 3px 15px rgba(0,0,0,0.4);
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #3D8C95;
+}
+
+.text_header_style{
+	font-family: modecoBold; 
+	font-size: 2vw;
+	height: 100%;
+	margin: 0.7vw 0 0.6vw 1.6vw;
+	color: #3D8C95;
+}
+
+.btn_tool{
+	background-color: #66abb3;
+	font-family: robotoRegular;
+	color: white;
+	width: 100%;		
+}
+
+.btn_tool:hover{
+	background-color: #3D8C95;
+}
+
+.header_modal{
+	width: 100%; 
+	height: 7vh;
+	background-color: #3D8C95;
+	margin: 0;
+	border-radius: 5px;
+	
+}
+
+.tulisan_header{
+	padding: 1vh;
+	font-family: modecoBold; 
+	color: white; 
+	font-size: 4vh;
+}
+
+.select2-container--open {
+    z-index: 1;
+}
+
+.form_tambah{
+	font-family: robotoRegular;
+	margin-top: 10px;
+	font-size: 30px;
+
+}
+
+.btn_dropdown{
+	padding: 6px;
+	height: 20px;
+	display: inline-table;
+	background-color: #3D8C95;
+	color: white;
+	border-radius: 6px;
+	margin: 5px;
+	width: 98%;
+}
+
+.btn_dropdown:hover{
+	background-color: #2d5e63; 
+	color: white;
+}
+
+
+
+
