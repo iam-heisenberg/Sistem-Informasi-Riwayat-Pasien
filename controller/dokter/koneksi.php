@@ -6,5 +6,6 @@
 	$dbname='heroku_61847ab65c6aed4';
 	$koneksi=mysqli_connect($hostname,$username, $password, $dbname);
 
-
+    echo "tes satudua tiga"; 
+    echo "kamu ini mau nya jadi apa sih sebenenrnya";
 ?>
