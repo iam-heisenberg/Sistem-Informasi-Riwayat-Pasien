@@ -6,6 +6,5 @@
 	$dbname='heroku_61847ab65c6aed4';
 	$koneksi=mysqli_connect($hostname,$username, $password, $dbname);
 
-    
-    asdasdasdasdasds
+
 ?>
