@@ -1,10 +1,7 @@
 <?php 
 $no=1;
 include('../../controller/dokter/koneksi.php');
-require_once("../../dompdf/autoload.inc.php");
-use Dompdf\Dompdf;
 $id=$_GET['id'];
-$dompdf = new Dompdf();
 $nama=mysqli_query($koneksi,"SELECT nama_pasien FROM pasien where id_pasien=$id and mode=1");
 $namaTampil=mysqli_fetch_assoc($nama);
 $html = '
@@ -126,13 +123,12 @@ $html.='
 </body>
 </html>
 ';
-$dompdf->loadHtml($html);
-// Setting ukuran dan orientasi kertas
-$dompdf->setPaper('A4', 'potrait');
-// Rendering dari HTML Ke PDF
-$dompdf->render();
-// Melakukan output file Pdf
-$dompdf->stream('Riwayat Pasien '.$namaTampil['nama_pasien'].'.pdf');
+require_once("../../vendor/autoload.php");
+$mpdf = new \Mpdf\Mpdf();;
+
+$mpdf->AddPage('p','A4');
+$mpdf->WriteHTML($html);
+$mpdf->Output();
 ?>
 
 

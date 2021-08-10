@@ -130,11 +130,10 @@
 
 .noHalaman{
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	top: 90%;
+	left: 10%;
 	z-index: -1;
-	font-size: 200pt;
+	font-size: 20pt;
 	color: rgba(0, 0, 0, 0.11);
 }
 
