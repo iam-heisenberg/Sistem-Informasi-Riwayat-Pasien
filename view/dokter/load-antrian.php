@@ -1,7 +1,7 @@
 
         <div class="nextPasien">
             <p class="judulNext">
-                    Pasien Berikutnya
+                    Pasien Saat Ini
                 </p>
 
                 <table class="tabelAntrian" id="tabelAntrian">
