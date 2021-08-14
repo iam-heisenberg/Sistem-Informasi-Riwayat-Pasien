@@ -120,7 +120,7 @@
 				</div>
 				<div class="form-group col">
 					<label for="alamat">Alamat :</label>
-					<input type="text" name="alamat" id="alamat" placeholder="Masukan Alamat Pasien" class="form-control" required="">
+					<input type="text" name="alamat" id="alamat" autocomplete="off" placeholder="Masukan Alamat Pasien" class="form-control" required="">
 					<div class="invalid-feedback" >
 				        Tolong masukan alamat pasien
 				     </div>
@@ -130,7 +130,7 @@
 			<div class="form-row">
 				<div class="form-group col">
 					<label for="ktp">KTP :</label>
-					<input type="text" name="ktp_pasien" id="ktp_pasien" placeholder="Masukan Nomor KTP pasien" class="form-control" required="">
+					<input type="text" name="ktp_pasien" id="ktp_pasien" autocomplete="off" placeholder="Masukan Nomor KTP pasien" class="form-control" required="">
 					<div class="invalid-feedback">
 				        Tolong masukan KTP pasien
 				     </div>
