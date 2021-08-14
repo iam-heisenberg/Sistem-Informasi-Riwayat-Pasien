@@ -13,6 +13,10 @@
 	 <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" />
 	<script type="text/javascript" src="../../js/jquery.js"></script>
 	<script type="text/javascript" src="../../js/bootstrap.js"></script>
+	<script type="text/javascript" src="../../js/moment.min.js"></script>
+    <script type="text/javascript" src="../../js/tempusdominus-bootstrap-4.min.js"></script>
+	<script src="../../js/tanggal.js"></script>
+	<link rel="stylesheet" href="../../css/tempusdominus-bootstrap-4.min.css">
     <script defer src="../../js/all.js"></script> 
     <link rel="stylesheet" href="../../css/all.css"/>
  
@@ -89,9 +93,6 @@
 				<div class="form-group col">
 					<label for="tgl_lahir">Tanggal Lahir (dd-mm-yyyy) : </label>
 					<input type="text" name="tgl_lahir" id="tgl_lahir" placeholder="Masukan Tanggal lahir Pasien (dd-mm-yyyy)" class="form-control datepicker datetimepicker-input" data-toggle="datetimepicker" data-target=".datepicker"required>
-					<div class="invalid-feedback">
-				     </div>
-
 				</div>
 
 				<script>
