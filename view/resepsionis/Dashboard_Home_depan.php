@@ -78,7 +78,7 @@
   			<p class="tulisan_welcome" style="margin-top: -45px; font-family: robotoRegular"> Di Aplikasi Riwayat Pasien</p>
 
   			<form action="list_pasien_depan.php" method="post" class="form_cari">
-	  			<input type="text" name="cari" id="cari" placeholder="Masukan Nama atau ID Pasien" style="width: 90%; border-radius:1000px; height: 100%; padding-left: 20px ; font-family: robotoRegular; border-style: none;" >
+	  			<input type="text" name="cari" required id="cari" placeholder="Masukan Nama atau ID Pasien" style="width: 90%; border-radius:1000px; height: 100%; padding-left: 20px ; font-family: robotoRegular; border-style: none;" >
 	  	   		<button type="submit" style="border-radius: 1000px; width: 50px;height: 100%; margin-left: 10px; background-color: white; border-style: none;" ><i class="fas fa-arrow-right" style="font-size: 17px"></i></button>		
 	  		</form>
 
@@ -102,7 +102,7 @@
 				<div class="card kartu_shortcut">
 					  <img class="card-img-top" src="../../resource/antri2.jpg" alt="Card image cap" >
 					  <div class="card-body">
-						    <p class="card-title card_text_title">REGISTASI ANTRI </p>
+						    <p class="card-title card_text_title">REGISTRASI ANTRIAN </p>
 							<p class="subJudul">Untuk membuat nomor antrian pasien</p>
 						</div>
 				</div></a>
@@ -112,7 +112,7 @@
 					  <img class="card-img-top" src="../../resource/obat.jpg" alt="Card image cap">
 					  <div class="card-body">
 							<p class="card-title card_text_title">PENCATATAN OBAT</p>
-						 	<p class="subJudul">Semua tentang obat obatan yang telah terimpan</p>
+						 	<p class="subJudul">Semua tentang obat obatan yang telah tersimpan</p>
 						</div>	
 				</div>
 	  		</div></a>

@@ -78,7 +78,7 @@
         </div>
         <form action="inventory_obat_dokter.php" method="post" class="bungkus_cari">
 				<div class="rounded dasar_cari">
-					<input type="text" name="cari" id="cari" placeholder="Cari Nama Obat atau ID Obat " class="rounded cari">
+					<input type="text" required name="cari" id="cari" placeholder="Cari Nama Obat atau ID Obat " class="rounded cari">
 				</div>
 
 				<div class="rounded dasar_logoSearch">

@@ -82,7 +82,7 @@
 
 		<form action="list_obat_depan.php" method="post" class="bungkus_cari">
 				<div class="rounded dasar_cari">
-					<input type="text" name="cari" id="cari" placeholder="Cari Nama Obat atau ID Obat " class="rounded cari">
+					<input type="text" name="cari" required id="cari" placeholder="Cari Nama Obat atau ID Obat " class="rounded cari">
 				</div>
 
 				<div class="rounded dasar_logoSearch">

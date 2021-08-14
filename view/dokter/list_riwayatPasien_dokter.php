@@ -83,7 +83,7 @@
 
         <div class="dasarCari">
             <form action="list_riwayatPasien_dokter.php" method="post" class="styleForm">
-                <input type="text" class="cari" placeholder="Cari nama pasien" name="textCari" id="textCari">  
+                <input type="text" required class="cari" placeholder="Cari nama pasien" name="textCari" id="textCari">  
                 <div class="tombol_cari"><button type="submit" name="cari" id="cari" class="searchIni"><i class="fa fa-search" aria-hidden="true"></i></button></div>
         </div>
 

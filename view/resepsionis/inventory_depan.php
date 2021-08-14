@@ -67,7 +67,7 @@
 		<p class="tulisan_judul" style="margin-top: -7vh;">Inventory</p>
 
 		<form action="list_obat_depan.php" method="POST" class="form_cari">
-	  			<input type="text" name="cari" id="cari" placeholder="Masukan Nama Obat" class="input_box">
+	  			<input type="text" name="cari" required id="cari" placeholder="Masukan Nama Obat" class="input_box">
 	  			<button class="button_box"><i class="fas fa-arrow-right"></i></button>		
 	  	</form>
 

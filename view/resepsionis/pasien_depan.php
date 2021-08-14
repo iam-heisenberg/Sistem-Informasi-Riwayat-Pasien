@@ -69,7 +69,7 @@
 		<p class="tulisan_judul" style="margin-top: -70px;">Pasien</p>
 
 		<form action="list_pasien_depan.php" method="post" class="form_cari">
-	  			<input type="text" name="cari" id="cari" placeholder="Masukan Nama atau ID Pasien" class="input_box">
+	  			<input type="text" name="cari" required id="cari" placeholder="Masukan Nama atau ID Pasien" class="input_box">
 	  			<button class="button_box"><i class="fas fa-arrow-right"></i></button>		
 	  	</form>
 
