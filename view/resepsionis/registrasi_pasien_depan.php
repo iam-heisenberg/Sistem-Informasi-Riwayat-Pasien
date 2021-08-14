@@ -88,11 +88,21 @@
 				</div>
 				<div class="form-group col">
 					<label for="tgl_lahir">Tanggal Lahir (dd-mm-yyyy) : </label>
-					<input type="text" name="tgl_lahir" id="tgl_lahir" placeholder="Masukan Tanggal lahir Pasien (dd-mm-yyyy)" class="form-control" required>
+					<input type="text" name="tgl_lahir" id="tgl_lahir" placeholder="Masukan Tanggal lahir Pasien (dd-mm-yyyy)" class="form-control datepicker datetimepicker-input" data-toggle="datetimepicker" data-target=".datepicker"required>
 					<div class="invalid-feedback">
-				        Tolong masukan tanggal lahir pasien
 				     </div>
+
 				</div>
+
+				<script>
+                    $(document).ready(function(){
+                        setDatePicker()
+                        setDateRangePicker(".startdate", ".enddate")
+                        setMonthPicker()
+                        setYearPicker()
+                        setYearRangePicker(".startyear", ".endyear")
+                    })
+                </script>
 			</div>
 
 			<div class="form-row">

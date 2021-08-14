@@ -102,7 +102,7 @@
 				<div class="card kartu_shortcut">
 					  <img class="card-img-top" src="../../resource/antri2.jpg" alt="Card image cap" >
 					  <div class="card-body">
-						    <p class="card-title card_text_title">REGISTRASI ANTRIAN </p>
+						    <p class="card-title card_text_title">REGISTRASI ANTRI</p>
 							<p class="subJudul">Untuk membuat nomor antrian pasien</p>
 						</div>
 				</div></a>
