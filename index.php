@@ -25,12 +25,12 @@
     <form action="login.php" method="POST" style="width:90%;margin-left:5%;margin-top:3%" required>
         <div class="form-row">
             <label for="username">Username: </label>
-            <input type="text" name="username" id="username" placeholder="Masukan username" class="form-control" required>
+            <input type="text" autocomplete="off" name="username" id="username" placeholder="Masukan username" class="form-control" required>
         </div>
 
         <div class="form-row" style="margin-top:5%">
             <label for="password">password: </label>
-            <input type="password" name="password" id="password" placeholder="Masukan password" class="form-control" required>
+            <input type="password"  autocomplete="off"  name="password" id="password" placeholder="Masukan password" class="form-control" required>
         </div>
         
        
