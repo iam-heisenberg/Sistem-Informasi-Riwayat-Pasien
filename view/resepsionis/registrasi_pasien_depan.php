@@ -92,7 +92,7 @@
 				</div>
 				<div class="form-group col">
 					<label for="tgl_lahir">Tanggal Lahir (dd-mm-yyyy) : </label>
-					<input type="text" name="tgl_lahir" id="tgl_lahir" placeholder="Masukan Tanggal lahir Pasien (dd-mm-yyyy)" class="form-control datepicker datetimepicker-input" data-toggle="datetimepicker" data-target=".datepicker"required>
+					<input type="text" autocomplete="off" name="tgl_lahir" id="tgl_lahir" placeholder="Masukan Tanggal lahir Pasien (dd-mm-yyyy)" class="form-control datepicker datetimepicker-input" data-toggle="datetimepicker" data-target=".datepicker"required>
 				</div>
 
 				<script>
