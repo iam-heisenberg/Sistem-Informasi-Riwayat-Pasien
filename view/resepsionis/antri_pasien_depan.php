@@ -89,7 +89,7 @@
 						<?php 
 							include '../../controller/resepsionis/koneksi.php';
 							$no=1;
-							$list_antrian=mysqli_query($koneksi,'select pasien.nama_pasien, antrian.id_antrian, antrian.id_pasien, antrian.jam_datang from antrian inner join pasien on antrian.id_pasien = pasien.id_pasien where modes=1 ORDER BY antrian.jam_datang desc');
+							$list_antrian=mysqli_query($koneksi,'select pasien.nama_pasien, antrian.id_antrian, antrian.id_pasien, antrian.jam_datang from antrian inner join pasien on antrian.id_pasien = pasien.id_pasien where modes=1 ORDER BY antrian.jam_datang asc');
 							if(mysqli_num_rows($list_antrian)>0){
 								while($list=mysqli_fetch_array($list_antrian)){?>
 								<tr>
