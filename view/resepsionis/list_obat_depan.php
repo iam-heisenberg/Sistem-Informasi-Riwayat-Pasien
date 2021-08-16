@@ -124,7 +124,7 @@
 						$selanjutnya = $halaman + 1; 
 						$no=1;
 
-						$list_obat = mysqli_query($koneksi,"select * from obat");
+						$list_obat = mysqli_query($koneksi,"select * from obat where status=1");
 						$jumlah_data=mysqli_num_rows($list_obat); 
 						$total_halaman=ceil($jumlah_data/$batas);
 
