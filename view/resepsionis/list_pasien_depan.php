@@ -124,7 +124,7 @@
 					$kembali = $halaman - 1;
 					$selanjutnya = $halaman + 1;
 
-					$list_pasien = mysqli_query($koneksi,"select * from pasien mode = 1");
+					$list_pasien = mysqli_query($koneksi,"select * from pasien where mode = 1");
 					$jumlah_data=mysqli_num_rows($list_pasien); 
 					$total=ceil($jumlah_data/$batas); 
 					$nomor=$halaman+1;
