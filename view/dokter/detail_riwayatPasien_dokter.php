@@ -1,6 +1,6 @@
 <?php
-    ini_set('error_reporting', 0);
-    ini_set('display_errors', 0);
+    // ini_set('error_reporting', 0);
+    // ini_set('display_errors', 0);
     session_start();
     if (!isset($_SESSION['username'])){
         header("Location: ../../index.php");
@@ -122,12 +122,6 @@
                     </div>
                 </div>
 
-                <div class="col">
-                    <div class="form-group"> 
-                      <label for="umur_pasien">Umur pasien</label>
-                      <input type="number" name="umur_pasien" id="umur_pasien" class="form-control" placeholder="Masukan umur pasien" aria-describedby="helpId">
-                    </div>
-                </div>
             </div>
 
 
@@ -285,7 +279,33 @@
 
                     <tr>
                         <td class="objek">Umur</td>
-                        <td class="deskripsi">: <?php echo $riwayat_pasienTampil['umur'];?> Tahun</td>
+                        <td class="deskripsi">: <?php 
+                            $id_rekam=$riwayat_pasienTampil["id_rekamMedis"];
+                            $tglLahir = mysqli_query($koneksi, "select tgl_lahir_pasien from pasien where id_pasien=$id");
+                            $tglDatang = mysqli_query($koneksi, "select tanggal_kunjungan from riwayat_pasien where id_rekamMedis=$id_rekam");
+                            $tglLahirTampil= mysqli_fetch_array($tglLahir);
+                            $tglLahirPakai=$tglLahirTampil['tgl_lahir_pasien'];
+                            
+                            $tglDatangTampil = mysqli_fetch_assoc($tglDatang);
+                            $tglDatangTampilPakai = $tglDatangTampil['tanggal_kunjungan'];
+
+                            $stringTglLahir = explode ("-", $tglLahirPakai);
+                            $stringTglDatang = explode ("-", $tglDatangTampilPakai);
+
+                            $jumlahTglLahir = $stringTglLahir[0]+($stringTglLahir[1]*30); 
+                            $jumlahTglDatang = $stringTglDatang[0]+($stringTglDatang[1]*30); 
+                            
+                            if($jumlahTglDatang >= $jumlahTglLahir){
+                                $umur = $stringTglDatang[2]-$stringTglLahir[2];
+                            } else{
+                                $umur = ($stringTglDatang[2]-$stringTglLahir[2])-1;
+                            }
+                            
+                            
+
+                           
+                            echo $umur;
+                        ?> Tahun</td>
                     </tr>
 
                     <tr>
@@ -315,12 +335,14 @@
                         <td class="deskripsi">
                     <?php 
                         $id_rekam=$riwayat_pasienTampil["id_rekamMedis"];
-                        $obat_test = mysqli_query($koneksi,"select obat_untuk_pasien.kumpulan_obat from riwayat_pasien inner join obat_untuk_pasien on riwayat_pasien.id_obatDikasih = obat_untuk_pasien.id_obatDikasih where id_rekamMedis=$id_rekam");
+                        $obat_test = mysqli_query($koneksi,"select obat_untuk_pasien.kode_obat, obat_untuk_pasien.sediaan, obat_untuk_pasien.jumlah from riwayat_pasien inner join obat_untuk_pasien on riwayat_pasien.id_obatDikasih = obat_untuk_pasien.id_obatDikasih where id_rekamMedis=$id_rekam");
                         $obat_tamil = mysqli_fetch_assoc($obat_test);
-                        $obatDikasih_bijian = explode(", ", $obat_tamil['kumpulan_obat']);
+                        $obatDikasih_bijian = explode(", ", $obat_tamil['kode_obat']);
+                        $sediaan_bijian = explode(", ", $obat_tamil['sediaan']);
+                        $jumlah_bijian = explode(", ", $obat_tamil['jumlah']);
                         for($i=0;$i<count($obatDikasih_bijian);$i++){
                     ?>
-                        <li><?php echo $obatDikasih_bijian[$i] ?></li>
+                        <li><?php echo $obatDikasih_bijian[$i] ?> <?php echo $sediaan_bijian[$i] ?>, jumlah yang diberikan: <?php echo $jumlah_bijian[$i] ?></li>
                         <?php }?>
                         </td>
                     </tr>
@@ -368,12 +390,6 @@
                                             </div>
                                         </div>
 
-                                        <div class="col">
-                                            <div class="form-group"> 
-                                            <label for="umur_pasien">Umur pasien</label>
-                                            <input type="number" name="umur_pasien" id="umur_pasien" class="form-control" value="<?php echo $riwayat_pasienTampil['umur'];?>" aria-describedby="helpId">
-                                            </div>
-                                        </div>
                                     </div>
 
 
@@ -425,9 +441,9 @@
                                                         $ambil_list_obat = mysqli_query($koneksi, "SELECT * FROM obat where status=1 or status=2"); 
                                                         
                                                         $id_riwayat = $riwayat_pasienTampil["id_rekamMedis"]; 
-                                                        $ambil_obatDikasih = mysqli_query($koneksi, "SELECT obat_untuk_pasien.kumpulan_obat FROM riwayat_pasien INNER JOIN obat_untuk_pasien on riwayat_pasien.id_obatDikasih = obat_untuk_pasien.id_obatDikasih WHERE id_rekamMedis = $id_riwayat");
+                                                        $ambil_obatDikasih = mysqli_query($koneksi, "SELECT obat_untuk_pasien.kode_obat FROM riwayat_pasien INNER JOIN obat_untuk_pasien on riwayat_pasien.id_obatDikasih = obat_untuk_pasien.id_obatDikasih WHERE id_rekamMedis = $id_riwayat");
                                                         $data_obadDikasih = mysqli_fetch_array($ambil_obatDikasih);
-                                                        $obatDikasih_bijian = explode(", ", $data_obadDikasih['kumpulan_obat']);
+                                                        $obatDikasih_bijian = explode(", ", $data_obadDikasih['kode_obat']);
                                                         for($i=0; $i<count($obatDikasih_bijian) ; $i++){
                                                     ?>
                                                         <option selected=""><?php echo $obatDikasih_bijian[$i];?></option>

@@ -20,12 +20,6 @@
             $berat_badan=$_POST['rujukan'];
         }
 
-        if(empty($_POST['umur_pasien'])){
-            $umur="-";
-        } else{
-            $umur=$_POST['umur_pasien'];
-        }
-
         if(empty($_POST['subjek'])){
             $subjek="-";
         } else{
@@ -54,10 +48,18 @@
         for($i=0;$i<$hitungArray;$i++){
             $obat=$_POST['obat_dikasih']; 
             $convert_obat=implode(", ", $obat);
+            $sediaan=mysqli_query($koneksi, "select sediaan_obaat from obat where nama_obat='$obat[$i]'");
+            $sediaan_tampil= mysqli_fetch_array($sediaan);
+            $convert_sediaan[$i]=$sediaan_tampil['sediaan_obaat'];
+            $string_sediaan=implode(", ",$convert_sediaan);
+            $convert_jumlah[$i]=0;
+            $string_jumlah=implode(", ",$convert_jumlah);
+            
+            
         }
-
-        mysqli_query($koneksi,"insert into obat_untuk_pasien values('$id_obatDikasih','$convert_obat')");
-        mysqli_query($koneksi, "insert into riwayat_pasien values('', '$id_pasien', '$tanggal', '$berat_badan', '$umur', '$subjek', '$objek', '$asesestment','$planing', '$id_obatDikasih', 1,'$rujukan')");
+           
+        mysqli_query($koneksi,"insert into obat_untuk_pasien values('$id_obatDikasih','$convert_obat','$string_sediaan','$string_jumlah')");
+        mysqli_query($koneksi, "insert into riwayat_pasien values('', '$id_pasien', '$tanggal', '$berat_badan', '$subjek', '$objek', '$asesestment','$planing', '$id_obatDikasih', 1,'$rujukan')");
         header("location:../../view/dokter/tambah_riwayatPasien_dokter.php");
     }
 

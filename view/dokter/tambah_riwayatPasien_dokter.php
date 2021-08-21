@@ -151,13 +151,6 @@
                           <input type="number" name="berat_badan" id="berat_badan" class="form-control" placeholder="Masukan berat badan pasien" aria-describedby="helpId">
                         </div>
                     </div>
-
-                    <div class="col">
-                        <div class="form-group"> 
-                          <label for="umur_pasien">Umur pasien</label>
-                          <input type="number" name="umur_pasien" id="umur_pasien" class="form-control" placeholder="Masukan umur pasien" aria-describedby="helpId">
-                        </div>
-                    </div>
                 </div>
 
 
