@@ -79,8 +79,29 @@ $html.='
                     </tr>
 
                     <tr>
-                        <td>Umur</td>
-                        <td>: '.$biodata_tampil['umur'].'</td>
+                        <td>Umur</td>';
+                            $id_rekam=$biodata_tampil["id_rekamMedis"];
+                            $tglLahir = mysqli_query($koneksi, "select tgl_lahir_pasien from pasien where id_pasien=$id");
+                            $tglDatang = mysqli_query($koneksi, "select tanggal_kunjungan from riwayat_pasien where id_rekamMedis=$id_rekam");
+                            $tglLahirTampil= mysqli_fetch_array($tglLahir);
+                            $tglLahirPakai=$tglLahirTampil['tgl_lahir_pasien'];
+                            
+                            $tglDatangTampil = mysqli_fetch_assoc($tglDatang);
+                            $tglDatangTampilPakai = $tglDatangTampil['tanggal_kunjungan'];
+
+                            $stringTglLahir = explode ("-", $tglLahirPakai);
+                            $stringTglDatang = explode ("-", $tglDatangTampilPakai);
+
+                            $jumlahTglLahir = $stringTglLahir[0]+($stringTglLahir[1]*30); 
+                            $jumlahTglDatang = $stringTglDatang[0]+($stringTglDatang[1]*30); 
+                            
+                            if($jumlahTglDatang >= $jumlahTglLahir){
+                                $umur = $stringTglDatang[2]-$stringTglLahir[2];
+                            } else{
+                                $umur = ($stringTglDatang[2]-$stringTglLahir[2])-1;
+                            }
+                        $html.='
+                        <td class="deskripsi">: '.$umur.'</td>
                     </tr>
 
                     <tr>
@@ -110,9 +131,20 @@ $html.='
                     </tr>
 
                     <tr>
-                        <td>Resep Obat</td>
-                        <td>: '.$biodata_tampil['kumpulan_obat'].'</td>
+                        <td>Resep Obat </td>
+                        <td>';
+                        $id_rekam=$biodata_tampil["id_rekamMedis"];
+                        $obat_test = mysqli_query($koneksi,"select obat_untuk_pasien.kode_obat, obat_untuk_pasien.sediaan, obat_untuk_pasien.jumlah from riwayat_pasien inner join obat_untuk_pasien on riwayat_pasien.id_obatDikasih = obat_untuk_pasien.id_obatDikasih where id_rekamMedis=$id_rekam");
+                        $obat_tamil = mysqli_fetch_assoc($obat_test);
+                        $obatDikasih_bijian = explode(", ", $obat_tamil['kode_obat']);
+                        $sediaan_bijian = explode(", ", $obat_tamil['sediaan']);
+                        $jumlah_bijian = explode(", ", $obat_tamil['jumlah']);
+                        for($i=0;$i<count($obatDikasih_bijian);$i++){
+                            $html.='<p>'.$obatDikasih_bijian[$i].' '.$sediaan_bijian[$i].'</p> 
+                        ';}
+                           $html.='</td> 
                     </tr>
+                    
              </table>
                
             <p class="noHalaman">'. $no++ .' </p>
